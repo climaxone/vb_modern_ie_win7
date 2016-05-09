@@ -55,6 +55,7 @@ function download_iso() {
 
 if [ ! -d "$VB_APP_PATH" ]; then 
     printf "EvernoteIT: No VirtualBox installed, will install now\n"
+	#create a -event in your JSS and name it installvirtualbox. The event would be to install a dmg or pkg of VirtualBox
 	sudo jamf policy -event installvirtualbox
 fi
 
